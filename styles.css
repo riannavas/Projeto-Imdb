@@ -382,6 +382,7 @@ body {
   .banner {
     width: 100%;
     padding-left: 0;
+    height: 40vh;
   }
 
   .banner img {
@@ -414,9 +415,6 @@ body {
     flex-direction: column;
     gap: 10px;
 
-     width: 90%;
-    margin: 0 auto;
-    padding: 0 10px;
   }
 
   /* CARDS */

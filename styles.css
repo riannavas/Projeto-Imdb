@@ -354,73 +354,92 @@ body {
 
 
 
-/* --- INÍCIO DA MÁGICA MOBILE --- */
-
+/* --- AJUSTE TOTAL MOBILE --- */
 @media (max-width: 768px) {
-    /* 1. Ajuste do Cabeçalho (Logo e Busca) */
+    /* Garante que nada transborde para os lados */
+    body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 1. Navbar: Empilha a logo e a pesquisa */
     .navbar {
         display: flex;
-        flex-direction: column; /* Empilha logo e busca */
-        align-items: center;
-        padding: 10px;
+        flex-direction: column !important;
+        height: auto !important;
+        padding: 15px 0 !important;
     }
 
     .search-container {
         width: 90% !important;
-        margin-top: 10px;
+        margin: 10px auto !important;
+        position: relative;
     }
 
-    /* 2. Menu de Categorias (Início, Filmes, Séries) */
+    /* 2. Categorias: Coloca em linha, lado a lado */
     .categorias {
-        display: flex;
-        justify-content: space-around;
-        padding: 10px 0;
+        display: flex !important;
+        justify-content: space-around !important;
+        width: 100% !important;
+        background: #1a1d29;
     }
 
-    /* 3. Ajuste do Banner Principal */
+    /* 3. Banner: Ajusta a imagem do Avatar para não ficar achatada */
+    .banner {
+        width: 100% !important;
+        height: auto !important;
+    }
+
     .banner img {
         width: 100% !important;
-        height: auto !important; /* Mantém a proporção da imagem */
-        object-fit: cover;
+        height: 200px !important;
+        object-fit: cover !important;
     }
 
     .banner-info h1 {
-        font-size: 1.2rem; /* Diminui o título do banner no celular */
+        font-size: 1.1rem !important;
+        bottom: 20px !important;
     }
 
-    /* 4. A Mágica dos Cards (2 por linha) */
+    /* 4. Cards: A parte mais importante (2 por linha) */
     .lanc {
-        display: block; /* Garante que o container se comporte bem */
-        text-align: center;
+        display: flex !important;
+        flex-wrap: wrap !important; /* Faz os filmes descerem para a próxima linha */
+        justify-content: center !important;
+        padding: 10px !important;
+        width: 100% !important;
     }
 
     .card {
-        display: inline-block !important;
-        width: calc(45% - 10px) !important; /* Dois cards lado a lado */
+        width: 44% !important; /* Ajuste para caber 2 com margem */
         margin: 5px !important;
-        vertical-align: top;
-        background-color: #1a1d29; /* Cor de fundo para destacar o card */
-        border-radius: 8px;
-        overflow: hidden;
+        display: flex !important;
+        flex-direction: column !important;
     }
 
     .cf {
         width: 100% !important;
-        height: 180px !important; /* Altura fixa para as capas não ficarem tortas */
-        object-fit: cover;
+        height: 220px !important; /* Altura fixa para as capas ficarem iguais */
+        object-fit: cover !important;
+        border-radius: 8px;
     }
 
     .inf-filme h3 {
-        font-size: 0.9rem; /* Diminui o nome do filme */
-        margin: 5px 0;
+        font-size: 0.85rem !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Corta o nome se for muito grande */
     }
 
-    .inf-filme p {
-        font-size: 0.7rem; /* Diminui a data */
-    }
-
-    /* 5. Esconder setas no celular (melhor usar o dedo para rolar) */
+    /* 5. Esconde as setas que não funcionam no touch do celular */
     .setas-container {
-        display: none;
+        display: none !important;
+    }
+
+    .menu-header {
+        width: 100% !important;
+        text-align: center;
     }
 }

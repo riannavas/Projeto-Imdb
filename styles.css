@@ -354,31 +354,87 @@ body {
 
 
 
-/* --- SÓ PARA CELULAR --- */
-@media (max-width: 480px) {
-    /* Faz os cards de filmes ficarem de 2 em 2 sem quebrar */
-    .card {
-        width: 45% !important; 
-        margin: 5px !important;
-        display: inline-block !important;
-    }
+@media (max-width: 768px) {
 
-    /* Ajusta a barra de pesquisa que está vazando */
-    .search-container {
-        width: 90% !important;
-        margin: 10px auto !important;
-    }
+  /* ===== NAVBAR ===== */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+  }
 
-    /* Ajusta as imagens para não ficarem achatadas */
-    .cf {
-        width: 100% !important;
-        height: auto !important;
-        min-height: 150px;
-    }
+  .logo h2 {
+    font-size: 20px;
+  }
 
-    /* Ajusta o banner do Avatar */
-    .banner img {
-        width: 100% !important;
-        height: auto !important;
-    }
+  .search-container {
+    width: 90%;
+  }
+
+  .campo-pesquisa {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* ===== CATEGORIAS ===== */
+  .categorias {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+
+  /* ===== BANNER ===== */
+  .banner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-info {
+    padding: 10px;
+  }
+
+  .banner-info h1 {
+    font-size: 18px;
+  }
+
+  .sobre {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  /* ===== CARROSSEL ===== */
+  .menu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .setas-container {
+    align-self: flex-end;
+  }
+
+  /* ===== CARDS ===== */
+  .lanc {
+    padding: 10px;
+  }
+
+  .card {
+    width: 45%;
+    margin: 10px 2%;
+  }
+
+  .cf {
+    width: 100%;
+    height: auto;
+  }
+
+  .inf-filme h3 {
+    font-size: 14px;
+  }
+
+  .inf-filme p {
+    font-size: 12px;
+  }
 }

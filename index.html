@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto-Imdb</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h2>
+                <b>CINE INFO</b>
+            </h2>
+        </div>
+
+        <div class="search-container">
+            <div class="imagem">
+                <img src="imagem/loupe.png" width="20">
+            </div>
+
+            <input type="text" id="campo-pesquisa" class="campo-pesquisa" placeholder="pesquisar filmes..."  onkeyup="realizarBusca()" >
+
+            <div id="resultados-busca"  class="lista-suspensa" ></div>
+
+
+        </div>
+
+
+    </header>
+
+    <nav class="categorias">
+
+
+        <div class="inicio">
+        <a href="" style="color: #6e759e;"><h4>Inicio</h4></a>
+        </div>
+
+        <div class="filmes">
+            <a href="Cat-Filmes/Filmes.html" style="color: #6e759e;"><h4>Filmes</h4></a>
+        </div>
+
+        <div class="series">
+        <a href="SeriesC/Series.html" style="color: #6e759e;"><h4>Séries</h4></a>
+        </div>
+
+    </nav>
+
+    <div class="banner">
+<a href="Cat-Filmes/Avatar.html">
+    <div class="banner-info">
+       <h1>Avatar: Fogo e Cinzas</h1>
+        <button class="sobre">Ver Sobre</button>
+    </div>
+    <img src="imagem/Avatar-Fogo.jpg" width="90%" height="220px">
+
+</a>
+    
+    </div>
+
+    <nav class="lanc"  id="carrossel-lancamentos">
+<div class="menu-header">
+        <ul class="menu-lancamentos">
+    <li>VER SOBRE FILMES</li>
+    <li class="ativo">LANÇAMENTOS</li>
+</ul>
+
+<div class="setas-container">
+            <button class="seta-btn" onclick="scrollL(this)">&#10094;</button>
+            <button class="seta-btn" onclick="scrollR(this)">&#10095;</button>
+        </div>
+        </div>
+
+    
+<div class="card">
+    <a href="Cat-Filmes/MJ.html">
+<img src="imagem/capa-mj.avif" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Michael</h3>
+         <p>24 de abril de 2026</p>
+      </div>
+</a>
+   </div>
+
+</div>
+
+<div class="card">
+    <a href="Cat-Filmes/He-man.html">
+<img src="imagem/he-man.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Mestres do Universo</h3>
+         <p>4 de Junho de 2026</p>
+      </div>
+      </a>
+      </div>
+
+<div class="card">
+    <a href="Cat-Filmes/PTS.html">
+<img src="imagem/Predator-Badlands.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Predador: Terras Selvagens</h3>
+         <p>6 de novembro de 2025</p>
+      </div>
+</a>
+   </div>
+
+   <div class="card">
+    <a href="Cat-Filmes/Dupla_perigosa.html">
+<img src="imagem/Dupla_Perigosa.jpg" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Dupla Perigosa</h3>
+         <p>28 de janeiro de 2026</p>
+      </div>
+</a>
+   </div>
+
+  <div class="card">
+    <a href="Cat-Filmes/din_sus.html">
+<img src="imagem/Dinheiro_suspeito_film.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Dinheiro Suspeito</h3>
+         <p>16 de janeiro de 2026</p>
+      </div>
+</a>
+   </div>
+
+
+    <div class="card">
+    <a href="Cat-Filmes/um_maluco_no_golfe_2.html">
+<img src="imagem/um_maluco_no_golfe_2.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Um Maluco no Golfe 2</h3>
+         <p>25 de julho de 2025</p>
+      </div>
+</a>
+   </div>
+
+<div class="card">
+    <a href="Cat-Filmes/tron_ares.html">
+<img src="imagem/tron_c895c573.jpeg" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Tron: Ares</h3>
+         <p>9 de outubro de 2025</p>
+      </div>
+</a>
+   </div>
+
+
+    </nav>
+
+
+
+    
+
+    <nav class="lanc"  id="carrossel-lancamentos">
+<div class="menu-header">
+        <ul class="menu-lancamentos">
+    <li>VER SOBRE SÉRIES</li>
+    <li class="ativo">NOVOS EPISODIOS</li>
+</ul>
+
+<div class="setas-container">
+            <button class="seta-btn" onclick="scrollL(this)">&#10094;</button>
+            <button class="seta-btn" onclick="scrollR(this)">&#10095;</button>
+        </div>
+        </div>
+
+    
+<div class="card">
+    <a href="SeriesC/cavaleiros_sete_reinos.html">
+<img src="imagem/images.jfif" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>O Cavaleiros dos Sete Reinos</h3>
+         <p>19 de janeiro de 2026</p>
+      </div>
+</a>
+   </div>
+
+</div>
+
+<div class="card">
+    <a href="SeriesC/Epstein.html">
+<img src="imagem/Epstein_poder_e_peversao.jpg" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Jeffrey Epstein: Poder e Perversão</h3>
+         <p>27 de maio de 2020</p>
+      </div>
+      </a>
+      </div>
+
+<div class="card">
+    <a href="SeriesC/the_pitt.html">
+<img src="imagem/the_pitt.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>The Pitt</h3>
+         <p>9 de janeiro de 2025</p>
+      </div>
+</a>
+   </div>
+
+   <div class="card">
+    <a href="SeriesC/fallout.html">
+<img src="imagem/fallout.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Fallout</h3>
+         <p>10 de abril de 2024</p>
+      </div>
+</a>
+   </div>
+
+  <div class="card">
+    <a href="SeriesC/espiritos_na_escola.html">
+<img src="imagem/Esp_Escola.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Espíritos na Escola</h3>
+         <p>9 de março de 2023</p>
+      </div>
+</a>
+   </div>
+
+
+    <div class="card">
+    <a href="SeriesC/Rivalidade_ardente.html">
+<img src="imagem/Rivalidade_ardente.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Rivalidade Ardente</h3>
+         <p>28 de novembro de 2025</p>
+      </div>
+</a>
+   </div>
+
+<div class="card">
+    <a href="SeriesC/Memory_of_a_Killer.html">
+<img src="imagem/Memory-of-a-Killer.webp" class="cf">
+
+<div class="inf-filme">
+    
+         <h3>Memory of a Killer</h3>
+         <p>25 de janeiro de 2026 </p>
+      </div>
+</a>
+   </div>
+
+
+    </nav>
+
+</body>
+
+</html>

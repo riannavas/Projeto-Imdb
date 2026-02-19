@@ -355,28 +355,59 @@ body {
 
 
 
-/* SÓ PARA CELULAR - COPIE TUDO */
-@media screen and (max-width: 480px) {
-    .lanc {
-        margin-left: 0 !important; /* Tira o buraco de 127px que esmaga tudo */
-        width: 100vw !important;  /* Força a largura total da tela */
-        display: flex !important;
-        flex-direction: row !important;
-        overflow-x: scroll !important; /* Força a rolagem lateral */
-        padding-left: 20px !important;
-        gap: 15px !important;
-    }
+@media (max-width: 768px) {
 
-    .card {
-        flex: 0 0 160px !important; /* O '0' proíbe o card de encolher */
-        width: 160px !important;    /* Mantém o tamanho do PC */
-        margin-left: 0 !important;
-        display: block !important;
-    }
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .cf {
-        width: 160px !important;
-        height: 245px !important;
-        object-fit: cover !important; /* Impede a foto do Dexter de esticar */
-    }
+  .search-container {
+    width: 90%;
+  }
+
+  /* Categorias */
+  .categorias {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Container dos cards */
+  .lanc {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Cards */
+  .card {
+    margin: 0;
+    width: 45%;
+  }
+
+  /* Imagem */
+  .cf {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Info do filme */
+  .inf-filme {
+    width: 100%;
+  }
+
+  /* Título "Séries" */
+  .menu-header {
+    justify-content: center;
+  }
+
+  .menu-lancamentos {
+    justify-content: center;
+    font-size: 22px;
+  }
 }

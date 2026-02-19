@@ -409,3 +409,59 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
   }
 }
 
+
+
+
+
+/* --- AJUSTE MOBILE PARA PÁGINA DO TRAILER --- */
+@media (max-width: 768px) {
+    .caixa_maior_avatar {
+        margin: 10px !important; /* Tira os 100px de margem lateral */
+        padding: 15px !important;
+        height: auto !important; /* Deixa o fundo crescer com o texto */
+    }
+
+    .conteudo-flex {
+        flex-direction: column !important; /* Trailer em cima, texto embaixo */
+        gap: 20px !important;
+    }
+
+    .Trailer {
+        width: 100% !important; /* Trailer ocupa a largura do celular */
+        height: 200px !important; /* Altura ajustada para não sumir */
+        margin: 0 !important;
+    }
+
+    .sinopse {
+        max-width: 100% !important; /* Texto ocupa a largura toda */
+        margin-top: 10px !important;
+        text-align: center; /* Centraliza para ficar mais elegante no celular */
+    }
+
+    .pri {
+        margin-bottom: 20px !important;
+        display: flex;
+        flex-direction: column; /* Empilha ano, tempo e estrelas */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .estrelas-linha {
+        margin-left: 0 !important;
+    }
+
+    .generos {
+        justify-content: center;
+        flex-wrap: wrap; /* Tags não saem da tela */
+    }
+
+    .ir_ao_site {
+        width: 100% !important; /* Botão grandão fácil de clicar */
+        margin: 20px auto !important;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

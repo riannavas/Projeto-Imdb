@@ -355,39 +355,34 @@ body {
 
 
 
-@media (max-width: 768px) {
+/* --- CORREÇÃO MOBILE - COPIE DAQUI --- */
+@media (max-width: 480px) {
+    .lanc {
+        width: 100% !important; /* Ocupa a tela toda */
+        margin-left: 0 !important; /* Tira o buraco da esquerda */
+        padding: 10px !important;
+        display: flex !important;
+        flex-wrap: wrap !important; /* Faz os cards descerem para a próxima linha */
+        justify-content: space-around !important;
+    }
 
-  /* container das séries */
-  .lanc {
-    width: 100%;
-    margin-left: 0;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
+    .card {
+        width: 45% !important; /* Garante 2 por linha sem achatar */
+        margin: 5px 0 !important;
+        margin-left: 0 !important;
+        height: auto !important;
+        display: block !important;
+    }
 
-  /* cards */
-  .card {
-    width: 100%;
-    margin: 0;
-  }
+    .cf {
+        width: 100% !important; /* A imagem preenche o card */
+        height: 230px !important; /* Altura fixa para não esticar */
+        object-fit: cover !important; /* Corta a imagem sem distorcer */
+    }
 
-  /* imagens */
-  .cf {
-    width: 100%;
-    height: auto;
-  }
-
-  /* título Séries */
-  .menu-header {
-    position: relative;
-    width: 100%;
-    padding: 15px;
-  }
-
-  .menu-lancamentos {
-    justify-content: center;
-    font-size: 22px;
-  }
+    .inf-filme {
+        width: 100% !important;
+        position: relative !important; /* Coloca o texto abaixo da imagem no mobile */
+        background: #1a1d29 !important;
+    }
 }

@@ -351,3 +351,49 @@ body {
     padding: 10px 20px;
     background-color: #0b0d14;
 }
+
+
+
+
+/* AJUSTE MOBILE PARA PÁGINA DE SÉRIES */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column !important;
+        padding: 15px !important;
+    }
+
+    .search-container {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+    .categorias {
+        gap: 10px !important;
+        justify-content: center;
+    }
+
+    .lanc {
+        width: 100% !important;
+        margin-left: 0 !important;
+        padding: 10px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    .card {
+        width: calc(45% - 10px) !important; /* Força 2 por linha */
+        margin: 5px !important;
+        margin-left: 0 !important; /* Tira aquele margem-left de 55px que você tinha */
+    }
+
+    .cf {
+        width: 100% !important; /* A imagem ocupa o card todo */
+        height: 220px !important;
+        object-fit: cover;
+    }
+
+    .inf-filme {
+        width: 100% !important;
+    }
+}

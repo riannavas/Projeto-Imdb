@@ -349,3 +349,46 @@ body {
     z-index: 10;
     background: #0b0d14;
 }
+
+
+
+
+
+/* Quando a tela for menor que 768px (Celulares e Tablets) */
+@media (max-width: 768px) {
+    .card {
+        /* No celular, vamos colocar 2 cards por linha */
+        width: calc(45% - 10px) !important; 
+        margin: 5px; /* Diminui o espaço para caber melhor */
+        display: inline-block;
+    }
+
+    .lanc {
+        width: 95% !important; /* Aumenta a área útil no celular */
+        margin: 0 auto;
+    }
+    
+    .titulo-principal {
+        font-size: 1.5rem; /* Diminui o texto para não quebrar */
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .search-container {
+        width: 100%; /* Ocupa o topo todo */
+        margin-bottom: 15px;
+    }
+    
+    .campo-pesquisa {
+        width: 80%; /* Sobra espaço para a lupa */
+    }
+    
+    .lista-suspensa {
+        width: 90%; /* Ajusta a lista de resultados para não vazar da tela */
+        left: 5%;
+    }
+}

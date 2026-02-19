@@ -382,11 +382,10 @@ body {
   .banner {
     width: 100%;
     padding-left: 0;
-    height: 40vh;
   }
 
   .banner img {
-    height: 150px;
+    height: 130px;
   }
 
   .banner-info {

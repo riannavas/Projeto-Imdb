@@ -356,7 +356,7 @@ body {
 
 @media (max-width: 768px) {
 
-  /* ===== NAVBAR ===== */
+  /* NAVBAR */
   .navbar {
     flex-direction: column;
     gap: 10px;
@@ -366,11 +366,10 @@ body {
     width: 90%;
   }
 
-  /* ===== CATEGORIAS ===== */
+  /* CATEGORIAS */
   .categorias {
-    justify-content: space-around;
-    height: auto;
-    padding: 10px 0;
+    justify-content: center;
+    gap: 30px;
   }
 
   .inicio,
@@ -379,7 +378,7 @@ body {
     padding: 0;
   }
 
-  /* ===== BANNER ===== */
+  /* BANNER */
   .banner {
     width: 100%;
     padding-left: 0;
@@ -390,13 +389,13 @@ body {
   }
 
   .banner-info {
-    left: 15px;
+    left: 20px;
     bottom: 20px;
     padding-left: 0;
   }
 
   .banner-info h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .sobre {
@@ -404,7 +403,7 @@ body {
     padding: 8px 16px;
   }
 
-  /* ===== LANÇAMENTOS ===== */
+  /* LANÇAMENTOS */
   .lanc {
     width: 100%;
     margin-left: 0;
@@ -413,22 +412,22 @@ body {
 
   .menu-header {
     flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
   }
 
-  /* ===== CARDS ===== */
+  /* CARDS */
   .card {
-    width: 150px;
+    width: 160px;
+    margin-right: 8px;
   }
 
   .cf {
-    width: 150px;
-    height: 220px;
+    width: 140px;
+    height: 210px;
   }
 
   .inf-filme {
-    width: 150px;
+    width: 140px;
   }
 
 }

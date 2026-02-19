@@ -354,41 +354,73 @@ body {
 
 
 
-/* Quando a tela for menor que 768px (Celulares e Tablets) */
-@media (max-width: 768px) {
-    .card {
-        /* No celular, vamos colocar 2 cards por linha */
-        width: calc(45% - 10px) !important; 
-        margin: 5px; /* Diminui o espaço para caber melhor */
-        display: inline-block;
-    }
-
-    .lanc {
-        width: 95% !important; /* Aumenta a área útil no celular */
-        margin: 0 auto;
-    }
-    
-    .titulo-principal {
-        font-size: 1.5rem; /* Diminui o texto para não quebrar */
-    }
-}
-
-
-
-
+/* --- INÍCIO DA MÁGICA MOBILE --- */
 
 @media (max-width: 768px) {
+    /* 1. Ajuste do Cabeçalho (Logo e Busca) */
+    .navbar {
+        display: flex;
+        flex-direction: column; /* Empilha logo e busca */
+        align-items: center;
+        padding: 10px;
+    }
+
     .search-container {
-        width: 100%; /* Ocupa o topo todo */
-        margin-bottom: 15px;
+        width: 90% !important;
+        margin-top: 10px;
     }
-    
-    .campo-pesquisa {
-        width: 80%; /* Sobra espaço para a lupa */
+
+    /* 2. Menu de Categorias (Início, Filmes, Séries) */
+    .categorias {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
     }
-    
-    .lista-suspensa {
-        width: 90%; /* Ajusta a lista de resultados para não vazar da tela */
-        left: 5%;
+
+    /* 3. Ajuste do Banner Principal */
+    .banner img {
+        width: 100% !important;
+        height: auto !important; /* Mantém a proporção da imagem */
+        object-fit: cover;
+    }
+
+    .banner-info h1 {
+        font-size: 1.2rem; /* Diminui o título do banner no celular */
+    }
+
+    /* 4. A Mágica dos Cards (2 por linha) */
+    .lanc {
+        display: block; /* Garante que o container se comporte bem */
+        text-align: center;
+    }
+
+    .card {
+        display: inline-block !important;
+        width: calc(45% - 10px) !important; /* Dois cards lado a lado */
+        margin: 5px !important;
+        vertical-align: top;
+        background-color: #1a1d29; /* Cor de fundo para destacar o card */
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .cf {
+        width: 100% !important;
+        height: 180px !important; /* Altura fixa para as capas não ficarem tortas */
+        object-fit: cover;
+    }
+
+    .inf-filme h3 {
+        font-size: 0.9rem; /* Diminui o nome do filme */
+        margin: 5px 0;
+    }
+
+    .inf-filme p {
+        font-size: 0.7rem; /* Diminui a data */
+    }
+
+    /* 5. Esconder setas no celular (melhor usar o dedo para rolar) */
+    .setas-container {
+        display: none;
     }
 }

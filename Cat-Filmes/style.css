@@ -340,3 +340,72 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     display: flex;
     gap: 10px;
 }
+
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-container {
+    width: 90%;
+  }
+
+  /* Categorias */
+  .categorias {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .menu-header {
+    width: 100%;
+  }
+
+  .menu-lancamentos {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  /* Container dos cards */
+  .lanc {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Cards */
+  .card {
+    margin: 0;
+    width: 45%;
+  }
+
+  /* Imagem */
+  .cf {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Info do filme */
+  .inf-filme {
+    width: 100%;
+  }
+
+  /* Título "Séries" */
+  .menu-header {
+    justify-content: center;
+  }
+
+  .menu-lancamentos {
+    justify-content: center;
+    font-size: 22px;
+  }
+}
+

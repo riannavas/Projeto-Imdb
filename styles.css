@@ -354,92 +354,31 @@ body {
 
 
 
-/* --- AJUSTE TOTAL MOBILE --- */
-@media (max-width: 768px) {
-    /* Garante que nada transborde para os lados */
-    body {
-        overflow-x: hidden;
-        width: 100%;
-        margin: 0;
-        padding: 0;
+/* --- SÓ PARA CELULAR --- */
+@media (max-width: 480px) {
+    /* Faz os cards de filmes ficarem de 2 em 2 sem quebrar */
+    .card {
+        width: 45% !important; 
+        margin: 5px !important;
+        display: inline-block !important;
     }
 
-    /* 1. Navbar: Empilha a logo e a pesquisa */
-    .navbar {
-        display: flex;
-        flex-direction: column !important;
-        height: auto !important;
-        padding: 15px 0 !important;
-    }
-
+    /* Ajusta a barra de pesquisa que está vazando */
     .search-container {
         width: 90% !important;
         margin: 10px auto !important;
-        position: relative;
     }
 
-    /* 2. Categorias: Coloca em linha, lado a lado */
-    .categorias {
-        display: flex !important;
-        justify-content: space-around !important;
-        width: 100% !important;
-        background: #1a1d29;
-    }
-
-    /* 3. Banner: Ajusta a imagem do Avatar para não ficar achatada */
-    .banner {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    .banner img {
-        width: 100% !important;
-        height: 200px !important;
-        object-fit: cover !important;
-    }
-
-    .banner-info h1 {
-        font-size: 1.1rem !important;
-        bottom: 20px !important;
-    }
-
-    /* 4. Cards: A parte mais importante (2 por linha) */
-    .lanc {
-        display: flex !important;
-        flex-wrap: wrap !important; /* Faz os filmes descerem para a próxima linha */
-        justify-content: center !important;
-        padding: 10px !important;
-        width: 100% !important;
-    }
-
-    .card {
-        width: 44% !important; /* Ajuste para caber 2 com margem */
-        margin: 5px !important;
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
+    /* Ajusta as imagens para não ficarem achatadas */
     .cf {
         width: 100% !important;
-        height: 220px !important; /* Altura fixa para as capas ficarem iguais */
-        object-fit: cover !important;
-        border-radius: 8px;
+        height: auto !important;
+        min-height: 150px;
     }
 
-    .inf-filme h3 {
-        font-size: 0.85rem !important;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; /* Corta o nome se for muito grande */
-    }
-
-    /* 5. Esconde as setas que não funcionam no touch do celular */
-    .setas-container {
-        display: none !important;
-    }
-
-    .menu-header {
+    /* Ajusta o banner do Avatar */
+    .banner img {
         width: 100% !important;
-        text-align: center;
+        height: auto !important;
     }
 }

@@ -385,7 +385,7 @@ body {
   }
 
   .banner img {
-    height: 180px;
+    height: 150px;
   }
 
   .banner-info {
@@ -395,7 +395,7 @@ body {
   }
 
   .banner-info h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .sobre {
@@ -413,6 +413,10 @@ body {
   .menu-header {
     flex-direction: column;
     gap: 10px;
+
+     width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
   }
 
   /* CARDS */

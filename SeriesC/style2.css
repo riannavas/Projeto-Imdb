@@ -355,45 +355,39 @@ body {
 
 
 
-/* AJUSTE MOBILE PARA PÁGINA DE SÉRIES */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column !important;
-        padding: 15px !important;
-    }
 
-    .search-container {
-        width: 100% !important;
-        margin-top: 10px;
-    }
+  /* container das séries */
+  .lanc {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
 
-    .categorias {
-        gap: 10px !important;
-        justify-content: center;
-    }
+  /* cards */
+  .card {
+    width: 100%;
+    margin: 0;
+  }
 
-    .lanc {
-        width: 100% !important;
-        margin-left: 0 !important;
-        padding: 10px !important;
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-    }
+  /* imagens */
+  .cf {
+    width: 100%;
+    height: auto;
+  }
 
-    .card {
-        width: calc(45% - 10px) !important; /* Força 2 por linha */
-        margin: 5px !important;
-        margin-left: 0 !important; /* Tira aquele margem-left de 55px que você tinha */
-    }
+  /* título Séries */
+  .menu-header {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+  }
 
-    .cf {
-        width: 100% !important; /* A imagem ocupa o card todo */
-        height: 220px !important;
-        object-fit: cover;
-    }
-
-    .inf-filme {
-        width: 100% !important;
-    }
+  .menu-lancamentos {
+    justify-content: center;
+    font-size: 22px;
+  }
 }

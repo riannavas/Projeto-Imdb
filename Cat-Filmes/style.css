@@ -439,11 +439,22 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     .pri {
-        margin-bottom: 20px !important;
-        display: flex;
-        flex-direction: column; /* Empilha ano, tempo e estrelas */
-        align-items: center;
-        gap: 10px;
+        display: flex !important;
+        flex-direction: row !important; /* Força a ficar lado a lado */
+        justify-content: center !important; /* Centraliza o grupo na tela */
+        flex-wrap: nowrap !important; /* Impede de quebrar linha */
+        gap: 10px !important; /* Espaço entre os itens */
+        margin-bottom: 30px !important;
+        font-size: 14px !important; /* Diminui um pouco a fonte para caber tudo */
+    }
+
+    .pri span {
+        margin-left: 10px !important;
+    }
+
+    .estrelas-linha {
+        margin-left: 10px !important;
+        white-space: nowrap !important; /* Garante que as estrelas não fujam */
     }
 
     .estrelas-linha {

@@ -355,34 +355,27 @@ body {
 
 
 
-/* --- CORREÇÃO MOBILE - COPIE DAQUI --- */
+/* Isso só vai rodar em telas pequenas (celulares) */
 @media (max-width: 480px) {
     .lanc {
-        width: 100% !important; /* Ocupa a tela toda */
-        margin-left: 0 !important; /* Tira o buraco da esquerda */
-        padding: 10px !important;
+        margin-left: 10px !important; /* Tira os 127px que esmagam a tela */
+        width: 100% !important;
         display: flex !important;
-        flex-wrap: wrap !important; /* Faz os cards descerem para a próxima linha */
-        justify-content: space-around !important;
+        flex-direction: row !important; /* Garante que fiquem um ao lado do outro como no PC */
+        overflow-x: auto !important;   /* Permite rolar para o lado se for muito largo */
+        white-space: nowrap !important;
+        padding-bottom: 20px;
     }
 
     .card {
-        width: 45% !important; /* Garante 2 por linha sem achatar */
-        margin: 5px 0 !important;
-        margin-left: 0 !important;
-        height: auto !important;
-        display: block !important;
+        margin-left: 10px !important; /* Ajusta o espaçamento entre cards no mobile */
+        flex: 0 0 auto !important;    /* Não deixa o card "encolher" ou "achatar" */
+        width: 160px !important;      /* Largura exata que você usa no PC */
     }
 
     .cf {
-        width: 100% !important; /* A imagem preenche o card */
-        height: 230px !important; /* Altura fixa para não esticar */
-        object-fit: cover !important; /* Corta a imagem sem distorcer */
-    }
-
-    .inf-filme {
-        width: 100% !important;
-        position: relative !important; /* Coloca o texto abaixo da imagem no mobile */
-        background: #1a1d29 !important;
+        width: 160px !important;      /* Mantém a foto do Dexter normal */
+        height: 245px !important;
+        object-fit: cover !important;
     }
 }

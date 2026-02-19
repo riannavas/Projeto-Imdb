@@ -355,27 +355,28 @@ body {
 
 
 
-/* Isso só vai rodar em telas pequenas (celulares) */
-@media (max-width: 480px) {
+/* SÓ PARA CELULAR - COPIE TUDO */
+@media screen and (max-width: 480px) {
     .lanc {
-        margin-left: 10px !important; /* Tira os 127px que esmagam a tela */
-        width: 100% !important;
+        margin-left: 0 !important; /* Tira o buraco de 127px que esmaga tudo */
+        width: 100vw !important;  /* Força a largura total da tela */
         display: flex !important;
-        flex-direction: row !important; /* Garante que fiquem um ao lado do outro como no PC */
-        overflow-x: auto !important;   /* Permite rolar para o lado se for muito largo */
-        white-space: nowrap !important;
-        padding-bottom: 20px;
+        flex-direction: row !important;
+        overflow-x: scroll !important; /* Força a rolagem lateral */
+        padding-left: 20px !important;
+        gap: 15px !important;
     }
 
     .card {
-        margin-left: 10px !important; /* Ajusta o espaçamento entre cards no mobile */
-        flex: 0 0 auto !important;    /* Não deixa o card "encolher" ou "achatar" */
-        width: 160px !important;      /* Largura exata que você usa no PC */
+        flex: 0 0 160px !important; /* O '0' proíbe o card de encolher */
+        width: 160px !important;    /* Mantém o tamanho do PC */
+        margin-left: 0 !important;
+        display: block !important;
     }
 
     .cf {
-        width: 160px !important;      /* Mantém a foto do Dexter normal */
+        width: 160px !important;
         height: 245px !important;
-        object-fit: cover !important;
+        object-fit: cover !important; /* Impede a foto do Dexter de esticar */
     }
 }

@@ -58,7 +58,7 @@ body {
     border-radius: 4px;
 }
 
-.search-container {
+.barra_de_busca {
 
     width: 250px;
     border-radius: 20px;
@@ -314,7 +314,7 @@ body {
     background-color: #0b0d14;
 }
 
-.setas-container {
+.setas {
     display: flex;
     gap: 10px;
 }
@@ -356,79 +356,79 @@ body {
 
 @media (max-width: 768px) {
 
-  /* NAVBAR */
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  .search-container {
-    width: 90%;
-  }
+    .barra_de_busca {
+        width: 90%;
+    }
 
-  /* CATEGORIAS */
-  .categorias {
-    justify-content: center;
-    gap: 30px;
-  }
+    /* CATEGORIAS */
+    .categorias {
+        justify-content: center;
+        gap: 30px;
+    }
 
-  .inicio,
-  .filmes,
-  .series {
-    padding: 0;
-  }
+    .inicio,
+    .filmes,
+    .series {
+        padding: 0;
+    }
 
-  /* BANNER */
-  .banner {
-    width: 100%;
-    padding-left: 0;
-  }
+    /* BANNER */
+    .banner {
+        width: 100%;
+        padding-left: 0;
+    }
 
-  .banner img {
-    height: 130px;
-  }
+    .banner img {
+        height: 130px;
+    }
 
-  .banner-info {
-    left: 20px;
-    bottom: 20px;
-    padding-left: 0;
-  }
+    .banner-info {
+        left: 20px;
+        bottom: 20px;
+        padding-left: 0;
+    }
 
-  .banner-info h1 {
-    font-size: 18px;
-  }
+    .banner-info h1 {
+        font-size: 18px;
+    }
 
-  .sobre {
-    font-size: 14px;
-    padding: 8px 16px;
-  }
+    .sobre {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 
-  /* LANÇAMENTOS */
-  .lanc {
-    width: 100%;
-    margin-left: 0;
-    padding-top: 40px;
-  }
+    /* LANÇAMENTOS */
+    .lanc {
+        width: 100%;
+        margin-left: 0;
+        padding-top: 40px;
+    }
 
-  .menu-header {
-    flex-direction: column;
-    gap: 10px;
+    .menu-header {
+        flex-direction: column;
+        gap: 10px;
 
-  }
+    }
 
-  /* CARDS */
-  .card {
-    width: 160px;
-    margin-right: 8px;
-  }
+    /* CARDS */
+    .card {
+        width: 160px;
+        margin-right: 8px;
+    }
 
-  .cf {
-    width: 140px;
-    height: 210px;
-  }
+    .cf {
+        width: 140px;
+        height: 210px;
+    }
 
-  .inf-filme {
-    width: 140px;
-  }
+    .inf-filme {
+        width: 140px;
+    }
 
 }

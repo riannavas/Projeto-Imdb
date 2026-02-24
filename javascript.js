@@ -25,7 +25,7 @@ const bancoDados = [
     { nome: "Tron Ares", link: "Cat-Filmes/tron_ares.html" },
     { nome: "Truque de Mestre: O 3° Ato", link: "Cat-Filmes/Truque_de_Mestre.html" },
     { nome: "Um Maluco no Golfe 2", link: "Cat-Filmes/um_maluco_no_golfe_2.html" },
-    
+
     // Séries
     { nome: "Fallout", link: "SeriesC/fallout.html" },
     { nome: "Stranger Things", link: "SeriesC/Stranger_things.html" },
@@ -55,9 +55,9 @@ function realizarBusca() {
     }
 
 
-if (item.nome.toLowerCase().includes(input)) {
-    container.innerHTML += `<a href="${item.link}" class="item-resultado">${item.nome}</a>`;
-}
+    if (item.nome.toLowerCase().includes(input)) {
+        container.innerHTML += `<a href="${item.link}" class="item-resultado">${item.nome}</a>`;
+    }
 
 
 }

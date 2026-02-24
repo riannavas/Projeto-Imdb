@@ -10,7 +10,7 @@ body {
     padding: 0;
     min-height: 100vh;
     background-color: #0a0a0a;
-    background-image: 
+    background-image:
         radial-gradient(circle at 20% 20%, #8a2be2 0%, transparent 25%),
         radial-gradient(circle at 80% 80%, #4b0082 0%, transparent 25%);
     background-size: 200% 200%;
@@ -22,15 +22,19 @@ body {
     0% {
         background-position: 0% 0%;
     }
+
     25% {
         background-position: 50% 0%;
     }
+
     50% {
         background-position: 50% 50%;
     }
+
     75% {
         background-position: 0% 50%;
     }
+
     100% {
         background-position: 0% 0%;
     }
@@ -93,7 +97,11 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    a { text-decoration: none; }
+
+    a {
+        text-decoration: none;
+    }
+
     a:hover {
 
         border-bottom: 2px solid #f5c518;
@@ -102,30 +110,31 @@ body {
         padding-bottom: 10px;
 
     }
+
     padding: 0 3%;
-    
+
 }
 
 .inicio {
 
     display: flex;
-   padding-left: 3%;
-    
+    padding-left: 3%;
+
 }
 
 .filmes {
 
-   display: flex;
-   padding-left: 3%;
-   padding-right: 3%;
-   
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
+
 
 }
 
 .series {
 
     display: flex;
-    
+
 }
 
 .caixa_maior_avatar {
@@ -141,9 +150,9 @@ body {
 }
 
 .Trailer {
-margin-top: 50px;
-margin-bottom: 140px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin-top: 50px;
+    margin-bottom: 140px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .conteudo-flex {
@@ -151,7 +160,7 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     flex-direction: row;
     gap: 40px;
     align-items: center;
-   
+
 }
 
 .sinopse {
@@ -173,7 +182,7 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 .estrelas-linha {
     color: #ffcc00;
     margin-left: 30px;
-    
+
 }
 
 .estrelas-linha small {
@@ -223,7 +232,7 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     padding: 12px 30px;
     width: fit-content;
     transition: 0.4s;
-    
+
 }
 
 .ir_ao_site a {
@@ -265,9 +274,9 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     padding-top: 50px;
     width: 80%;
     margin-left: 127px;
-   overflow-y: hidden;
+    overflow-y: hidden;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 20px;
 
 }
 
@@ -282,12 +291,12 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 .inf-filme {
-   position: absolute;
-    bottom: 0; 
+    position: absolute;
+    bottom: 0;
     width: 160px;
     padding: 10px;
     color: white;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 
 .inf-filme h3 {
@@ -310,19 +319,20 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 
     width: calc(18% - 10px);
 
-   display: inline-block;
+    display: inline-block;
     margin-right: 15px;
     margin-bottom: 30px;
     background: transparent;
-   
+
     white-space: normal;
 }
 
-.inf-filme h3, .inf-filme p {
+.inf-filme h3,
+.inf-filme p {
     transition: transform 0.4s ease;
 }
 
-.card:hover .inf-filme h3, 
+.card:hover .inf-filme h3,
 .card:hover .inf-filme p {
     transform: translateY(-15px);
 }
@@ -344,69 +354,69 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 
 @media (max-width: 768px) {
 
-  /* Navbar */
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-  }
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  .search-container {
-    width: 90%;
-  }
+    .search-container {
+        width: 90%;
+    }
 
-  /* Categorias */
-  .categorias {
-    justify-content: center;
-    gap: 15px;
-  }
+    /* Categorias */
+    .categorias {
+        justify-content: center;
+        gap: 15px;
+    }
 
-  .menu-header {
-    width: 100%;
-  }
+    .menu-header {
+        width: 100%;
+    }
 
-  .menu-lancamentos {
-    width: 100%;
-    justify-content: flex-start;
-    padding-left: 10px;
-  }
+    .menu-lancamentos {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
 
-  /* Container dos cards */
-  .lanc {
-    width: 100%;
-    margin-left: 0;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
+    /* Container dos cards */
+    .lanc {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 
-  /* Cards */
-  .card {
-    margin: 0;
-    width: 45%;
-  }
+    /* Cards */
+    .card {
+        margin: 0;
+        width: 45%;
+    }
 
-  /* Imagem */
-  .cf {
-    width: 100%;
-    height: auto;
-  }
+    /* Imagem */
+    .cf {
+        width: 100%;
+        height: auto;
+    }
 
-  /* Info do filme */
-  .inf-filme {
-    width: 100%;
-  }
+    /* Info do filme */
+    .inf-filme {
+        width: 100%;
+    }
 
-  /* Título "Séries" */
-  .menu-header {
-    justify-content: center;
-  }
+    /* Título "Séries" */
+    .menu-header {
+        justify-content: center;
+    }
 
-  .menu-lancamentos {
-    justify-content: center;
-    font-size: 22px;
-  }
+    .menu-lancamentos {
+        justify-content: center;
+        font-size: 22px;
+    }
 }
 
 
@@ -416,36 +426,48 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 /* --- AJUSTE MOBILE PARA PÁGINA DO TRAILER --- */
 @media (max-width: 768px) {
     .caixa_maior_avatar {
-        margin: 10px !important; /* Tira os 100px de margem lateral */
+        margin: 10px !important;
+        /* Tira os 100px de margem lateral */
         padding: 15px !important;
-        height: auto !important; /* Deixa o fundo crescer com o texto */
+        height: auto !important;
+        /* Deixa o fundo crescer com o texto */
     }
 
     .conteudo-flex {
-        flex-direction: column !important; /* Trailer em cima, texto embaixo */
+        flex-direction: column !important;
+        /* Trailer em cima, texto embaixo */
         gap: 20px !important;
     }
 
     .Trailer {
-        width: 100% !important; /* Trailer ocupa a largura do celular */
-        height: 200px !important; /* Altura ajustada para não sumir */
+        width: 100% !important;
+        /* Trailer ocupa a largura do celular */
+        height: 200px !important;
+        /* Altura ajustada para não sumir */
         margin: 0 !important;
     }
 
     .sinopse {
-        max-width: 100% !important; /* Texto ocupa a largura toda */
+        max-width: 100% !important;
+        /* Texto ocupa a largura toda */
         margin-top: 10px !important;
-        text-align: center; /* Centraliza para ficar mais elegante no celular */
+        text-align: center;
+        /* Centraliza para ficar mais elegante no celular */
     }
 
     .pri {
         display: flex !important;
-        flex-direction: row !important; /* Força a ficar lado a lado */
-        justify-content: center !important; /* Centraliza o grupo na tela */
-        flex-wrap: nowrap !important; /* Impede de quebrar linha */
-        gap: 10px !important; /* Espaço entre os itens */
+        flex-direction: row !important;
+        /* Força a ficar lado a lado */
+        justify-content: center !important;
+        /* Centraliza o grupo na tela */
+        flex-wrap: nowrap !important;
+        /* Impede de quebrar linha */
+        gap: 10px !important;
+        /* Espaço entre os itens */
         margin-bottom: 30px !important;
-        font-size: 14px !important; /* Diminui um pouco a fonte para caber tudo */
+        font-size: 14px !important;
+        /* Diminui um pouco a fonte para caber tudo */
     }
 
     .pri span {
@@ -454,7 +476,8 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 
     .estrelas-linha {
         margin-left: 10px !important;
-        white-space: nowrap !important; /* Garante que as estrelas não fujam */
+        white-space: nowrap !important;
+        /* Garante que as estrelas não fujam */
     }
 
     .estrelas-linha {
@@ -463,11 +486,13 @@ box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 
     .generos {
         justify-content: center;
-        flex-wrap: wrap; /* Tags não saem da tela */
+        flex-wrap: wrap;
+        /* Tags não saem da tela */
     }
 
     .ir_ao_site {
-        width: 100% !important; /* Botão grandão fácil de clicar */
+        width: 100% !important;
+        /* Botão grandão fácil de clicar */
         margin: 20px auto !important;
     }
 
